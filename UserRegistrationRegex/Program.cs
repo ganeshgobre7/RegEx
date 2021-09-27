@@ -12,7 +12,7 @@ namespace UserRegistrationRegex
             int defCount = 0;
             while (defCount == 0)
             {
-                Console.WriteLine("1.First Name 2.Last Name 3.E-mail 4.Mobile Number 5.Exit");
+                Console.WriteLine("1.First Name 2.Last Name 3.E-mail 4.Mobile Number 5.Password 6.Exit");
                 Console.WriteLine("Choose Your Option");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
@@ -33,10 +33,15 @@ namespace UserRegistrationRegex
                         Console.WriteLine(patterns.eMail(str2));
                         break;
                     case 4:
-                        Console.Write("Insert Mobile Number");
+                        Console.Write("Insert Mobile Number :");
                         string str3 = Console.ReadLine();
                         Console.WriteLine(patterns.mobNumber(str3));
-                        break; 
+                        break;
+                    case 5:
+                        Console.Write("Insert the Password :");
+                        string str4 = Console.ReadLine();
+                        Console.WriteLine(patterns.password(str4));
+                        break;
                     default:
                         Console.WriteLine("End");
                         defCount++;
