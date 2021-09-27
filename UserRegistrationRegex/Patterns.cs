@@ -28,5 +28,16 @@ namespace UserRegistrationRegex
         {
             return Regex.IsMatch(lName, reg_pattern1);
         }
+
+        public static string reg_pattern3= "^[a-z0-9]+[@]+[a-z]+[.][a-z]{2,3}";
+        /// <summary>
+        /// Method to Validate the Email Id
+        /// </summary>
+        /// <param name="email"></param>
+        /// <returns></returns>
+        public bool eMail(string email)
+        {
+            return Regex.IsMatch(email, reg_pattern3);
+        }
     }
 }
