@@ -39,7 +39,7 @@ namespace UserRegistrationRegex
         {
             return Regex.IsMatch(email, reg_pattern2);
         }
-        public static string reg_pattern3= @"^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$";
+        public static string reg_pattern3= @"^[+]{0,1}[0-9]{2}" + " " + "[6-9]{1}[0-9]{9}$";
         /// <summary>
         /// Method to validate the Mobile Number
         /// </summary>
