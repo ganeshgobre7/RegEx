@@ -5,9 +5,9 @@ using System.Text.RegularExpressions;
 
 namespace UserRegistrationRegex
 {
-    class Patterns
+   public class Patterns
     {
-        public static string reg_pattern = "^[A-Z][a-z]{3,}";
+        public string reg_pattern = "^[A-Z][a-z]{3,}";
             /// <summary>
             /// Method to Validate the First Name
             /// </summary>
