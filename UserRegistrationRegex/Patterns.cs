@@ -50,7 +50,7 @@ namespace UserRegistrationRegex
             return Regex.IsMatch(mobileNo, reg_pattern3);
         }
 
-        public static string reg_pattern_4 = @"^(?=.*[A-Z])[a-zA-Z0-9]{8}$";
+        public static string reg_pattern_4 = @"^(?=.*[A-Z])(?=.*\d)(?=.*\W)[A-Za-z\d@$!%*?&]{8}$";
         /// <summary>
         /// Method to validate the password
         /// </summary>

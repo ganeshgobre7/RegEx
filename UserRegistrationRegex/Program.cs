@@ -8,7 +8,7 @@ namespace UserRegistrationRegex
         {
             Console.WriteLine("WELCOME TO THE USER REGISTRATION REGEX PROBLEM");
 
-            Patterns patterns = new Patterns();
+            Patterns patterns = new Patterns();//creating object of pattern class
             int defCount = 0;
             while (defCount == 0)
             {
