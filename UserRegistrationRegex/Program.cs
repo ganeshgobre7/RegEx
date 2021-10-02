@@ -20,12 +20,12 @@ namespace UserRegistrationRegex
                     case 1:
                         Console.Write("Insert the First Name :");
                         string str = Console.ReadLine();
-                        Console.WriteLine(patterns.firstName(str));
+                        Console.WriteLine(patterns.FirstName(str));
                         break;
                     case 2:
                         Console.Write("Insert the Last Name :");
                         string str1 = Console.ReadLine();
-                        Console.WriteLine(patterns.lastName(str1));
+                        Console.WriteLine(patterns.LastName(str1));
                         break;
                     case 3:
                         Console.Write("Insert the Email Id :");
