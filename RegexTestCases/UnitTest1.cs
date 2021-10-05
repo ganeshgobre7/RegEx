@@ -78,7 +78,7 @@ namespace RegexTestCases
         public void mobNumber()
         {
             bool mobnumber = patterns.mobNumber("+91 9604877021");//Act
-            if(!mobnumber)
+            if(!mobnumber
             {
                 try
                 {

@@ -12,11 +12,7 @@ namespace UserRegistrationRegex
             /// Method to Validate the First Name
             /// </summary>
             /// <param name="fName"></param>
-            /// <returns></returns>
-       /* public bool firstName( string fName)
-        {
-            return Regex.IsMatch(fName, reg_pattern);
-        }*/
+            /// <returns></returns>      
        public bool FirstName(string firstName)
         {
             try
